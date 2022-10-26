@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%block body_block%}
+</head>
+<body style="background-color:#96d1cb">
+<div class="container" >
+
+    <div class="row">
+        <div class="col-4 " ></div>
+                <div class="col-4 mt-5   bg-success p-2 text-dark bg-opacity-25 border-3" style="height:300px">
+
+                    <h2 > Login </h2>
+                    <form action="" method="post">
+                        {%csrf_token%}
+                        {{form.as_p}}
+                        <button type="submit" class=" d-grid gap-2 col-6 mx-auto btn btn-info ">Login</button>
+
+                    </form>
+                    <a href="{%url 'registration'%}" >New user?Register now</a>
+
+                </div>
+
+
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{%endblock%}

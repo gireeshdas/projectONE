@@ -1,0 +1,31 @@
+{%extends 'index.html'%}
+{%block body_block%}
+
+</head>
+<body>
+<h1>welcome Admin</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        NewOrder # {{count}}
+                    </h5>
+                    <a href="{%url 'neworders'%}" class="btn btn-info">view</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-4"></div>
+</div>
+</div>
+
+</body>
+</html>
+{%endblock%}
+
+
